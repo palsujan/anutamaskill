@@ -1,0 +1,137 @@
+
+.reletedCourseBox{
+	padding: 15px 10px;
+	background-color: #fff;
+}
+.related-courses-row{
+	height: 278px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	// padding-right: 10px !important;
+}
+
+.releted-courses-wrap{
+	border-bottom:solid 1px #ececec;
+	margin-bottom:15px;
+	position: relative;
+	&:last-child{
+		display: none;
+	}
+
+	&:nth-last-child(2){
+		margin-bottom:0px !important;
+	}
+
+	&::before{
+		content: '';
+		display: block;
+		width: 49%;
+		height: 1.5px;
+		background-color: #eb7f1c;
+		position: absolute;
+		bottom:-1px;
+		left:-100%;
+		-webkit-transition: left 1000ms;
+    -moz-transition: left 1000ms;
+    -ms-transition: left 1000ms;
+    -o-transition: left 1000ms;
+    transition: left 1000ms;
+	}
+
+	&::after{
+		content: '';
+		display: block;
+		width: 49%;
+		height: 1.5px;
+		background-color: #002b46;
+		position: absolute;
+		bottom:-1px;
+		right:-100%;
+		-webkit-transition: right 1000ms;
+    -moz-transition: right 1000ms;
+    -ms-transition: right 1000ms;
+    -o-transition: right 1000ms;
+    transition: right 1000ms;
+	}
+
+	&:hover::before{
+		content: '';
+		left:0px;
+		-webkit-transition: left 1000ms;
+    -moz-transition: left 1000ms;
+    -ms-transition: left 1000ms;
+    -o-transition: left 1000ms;
+    transition: left 1000ms;
+	}
+
+	&:hover::after{
+		content: '';
+		right:0px;
+		-webkit-transition: right 1000ms;
+    -moz-transition: right 1000ms;
+    -ms-transition: right 1000ms;
+    -o-transition: right 1000ms;
+    transition: right 1000ms;
+	}
+
+	
+
+	.releted-courses{
+		.iconBox{
+			background-color:#fff;
+			margin-top:4px;
+			img{
+				width: 100%;
+			}
+		}
+
+		.title{
+			h3{
+				font-size: 13px;
+				color: #3c3d49;
+				margin-bottom: 2px;
+			}
+		}
+		.expect{
+			p{
+				font-size: 12px;
+    		color: #3c3d49;
+				font-weight: 300;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+				margin-bottom:0;
+			}
+		}
+
+		a{
+			text-decoration:none;
+		}
+
+	}
+}
+
+
+.related-courses-row::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.0);
+	background-color: #fff;
+}
+
+.related-courses-row::-webkit-scrollbar{
+	width: 1px;
+	background-color: #fff;
+}
+
+.related-courses-row::-webkit-scrollbar-thumb{
+	// background-color:#eb7f1c;
+	background-color: rgba(0,0,0,0.2);
+	border: 0px solid #555555;
+}
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+
+.sec-heading{
+	color: #002b46;
+	text-align: center;
+	font-size:26px;
+	position:relative;
+	span{
+		color: #eb7f1c;
+	}
+
+	&::before{
+		content: '';
+    width: 85px;
+    height: 1px;
+    background-color: #eb7f1c;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+	}
+
+	&::after{
+		content: '';
+    width: 85px;
+    height: 2px;
+    background-color: #002b46;
+    position: absolute;
+    bottom: -20px;
+    left: 60px;
+    right: 0;
+    margin: auto;
+	}
+
+}
+
+

@@ -1,0 +1,22 @@
+.blog-sec{
+
+	.profileBox{
+		position: relative;
+		padding: 10px 10px 30px 10px !important;
+		.dateName{
+			background-color: #002b46;
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    bottom: -28px;
+    padding: 5px 10px;
+			span{
+				font-size: 12px;
+				display: inline-block;
+				color:#fff;
+			}
+		}
+	}
+    
+}
+

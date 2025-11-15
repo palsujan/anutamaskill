@@ -1,0 +1,160 @@
+
+.homeBanner{
+	.carousel-item{
+		height: 360px;
+    background-repeat: no-repeat;
+    background-size: cover;
+		background-position: center;
+		@media (min-width: 768px) {
+			height:570px;
+		}
+		.carousel-caption{
+			height: 100px;
+			bottom: 0;
+			top: 0;
+			margin: auto;
+			background-color: rgba(0,0,0,0.3);
+			max-width: 600px;
+			// border: solid 1px #eb7f1c;
+			border-radius: 5px;
+			h3{
+				font-size:#eb7f1c;
+			}
+			a{
+				font-size: 12px;
+				color: #fff;
+				background-color: #eb7f1c;
+				padding: 7px 10px;
+				display: block;
+				max-width: 201px;
+				margin: 27px auto 0px;
+				text-transform: uppercase;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.studentReviewesBox{
+	.carousel.slide{
+		margin-bottom:80px;
+		min-height: 170px;
+	}
+
+	.studentsReviewH{
+		background-color: rgba(0,0,0, 0.0) !important;
+		padding: 0px 0px 15px !important;
+
+		&::before{
+			content:'';
+			left:0 !important;
+		}
+
+		&::after{
+			content:'';
+			left:0 !important;
+		}
+	}
+
+	.carousel-item{
+		&:nth-last-child(1){
+			display: none;
+		}
+
+		h3{
+			color: #3c3d49;
+			font-size: 16px;
+			text-align: left;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 1;
+			-webkit-box-orient: vertical;
+			font-weight: 700;
+			overflow-y: hidden;
+		}
+		p{
+			font-size: 14px;
+			font-weight: 300;
+			margin-bottom:0;	
+		}
+
+		.name-day{
+			margin-top:15px;
+			span{
+				display: inline-block;
+				color: rgba(25, 25, 25, 0.6);
+				margin-right: 10px;
+				font-size: 12px;
+				font-weight: 500;
+			}
+		}
+
+	}
+	.carousel-indicators{
+		bottom:-65px;
+		li{
+			background-color: #fff;
+			height: 8px;
+			opacity: 1;
+			width: 8px;
+		}
+		.active{
+			background-color: #eb7f1c;
+		}
+	}
+	.carousel-control-prev{
+		top: auto;
+    bottom: -38px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+		width: 25px;
+    height: 25px;
+    color: #fff;
+    text-align: center;
+		opacity: 1; 
+		border-radius: 50%;
+		border:solid 2px #fff;
+		.carousel-control-prev-icon{
+			width: 13px;
+			height: 13px;
+		}
+	}
+	.carousel-control-next{
+		top: auto;
+    bottom: -38px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+		width: 25px;
+    height: 25px;
+    color: #fff;
+    text-align: center;
+		opacity: 1; 
+		border-radius: 50%;
+		border:solid 2px #fff;
+		.carousel-control-next-icon{
+			width: 13px;
+			height: 13px;
+		}
+	}
+	
+	
+}
+.banner_title{
+	font-size: 18px;
+	line-height: 27px;;
+
+}
+@media(min-width:992px){
+	.banner_title{
+		font-size: 28px;
+		line-height: 42px;;
+	
+	}
+}
+
+
+

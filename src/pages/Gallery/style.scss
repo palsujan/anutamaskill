@@ -1,0 +1,44 @@
+
+.gallery-sec{
+	.galleryCol{
+		.blocks-gallery-grid{
+				margin: 0;
+				padding:0;
+		}
+		.blocks-gallery-item{
+				display: block;
+				figure{
+						// width: 100%;
+						img{
+								width: 100%;
+						}
+				}
+		}
+			
+	}
+
+	.wp-block-gallery{
+		.blocks-gallery-item{
+			display: inline-block;
+			width:50%;
+			padding:0 8px;
+			&:last-child{
+				width: 100%;
+			}
+
+			@media(min-width:768px){
+				width: 33.33%;
+				&:last-child{
+					width: 50%;
+				}
+				&:nth-last-child(2){
+					width: 50%;
+				}
+
+			}
+
+		}
+	}
+
+}
+

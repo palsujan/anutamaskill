@@ -1,0 +1,11 @@
+.sitelogo{
+    max-width:115px;
+    display: block;
+    @media (min-width:992px) {
+        max-width: 150px;
+    }
+    img{
+        width: 100%;
+    }
+}
+

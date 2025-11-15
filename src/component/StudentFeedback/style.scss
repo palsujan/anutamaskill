@@ -1,0 +1,75 @@
+.feedback-slider{
+	.feedbackBox{
+		padding: 15px;
+    background-color: #F1F2F2;
+    height: 100%;
+    margin: 0 8px;
+		border-radius: 3px;
+		-webkit-box-shadow: 0px 0px 5px 2px rgba(196,196,196,0.13);
+	-moz-box-shadow: 0px 0px 5px 2px rgba(196,196,196,0.13);
+	box-shadow: 0px 0px 5px 2px rgba(196,196,196,0.13);
+		h3{
+			font-size: 18px;
+			color: #002b46;
+			font-weight: 700;
+		}
+		p{
+			font-size:14px;
+			font-weight: 500;
+		}
+
+		.name-day{
+			span{
+				font-size: 12px;
+    		color: #eb7f1c;
+    		opacity: 0.7;
+			}
+		}
+	}
+	.react-multiple-carousel__arrow{
+		position: absolute;
+    outline: 0;
+    transition: all .5s;
+    border-radius: 35px;
+    z-index: 1000;
+    border: 0;
+		background: rgba(0, 0, 0, 0.3);
+    min-width: 14px;
+    min-height: 80px;
+		opacity: 1;
+
+		&::before{
+			font-size: 12px;
+    color: #fff;
+    font-weight: 700;
+		}
+	}
+
+	.react-multiple-carousel__arrow--right{
+		right: calc(0% + 1px) !important;	
+	}
+
+	.react-multiple-carousel__arrow--left{
+		left:calc(0% + 1px) !important; 
+	}
+
+	.reviewStar{
+		margin-bottom:12px;
+		span{
+			display: inline-block;
+    	width: 17px;
+    	height: 17px;
+    	margin-right: 5px;
+			img{
+				display: block;
+				width: 100%;
+
+			}
+		}
+	}
+}
+
+
+
+
+
